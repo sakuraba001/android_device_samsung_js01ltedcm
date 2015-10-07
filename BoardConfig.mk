@@ -17,6 +17,9 @@
 
 TARGET_OTA_ASSERT_DEVICE := js01ltedcm,js01lte,SC02F,SC-02F
 
+#workaround for Android L (selinux permissive)
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F androidboot.bootdevice=msm_sdcc.1 androidboot.selinux=permissive
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/js01lte/init/init_js01lte.c
