@@ -22,7 +22,7 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/js01lte/init/init_js01lte.c
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/js01lte/init/init_js01lte.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Partitions
